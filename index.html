@@ -4,10 +4,13 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="format-detection" content="telephone=no">
+	<!--<meta name="format-detection" content="telephone=no">-->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="icon" href="/favicon.ico" /> 
 		<script src="js/script.js" defer></script>
 	<title>interview</title>
 </head>
@@ -17,7 +20,7 @@
 			<div class="container">
 				<div class="header__row">
 					<div class="header__menu menu">
-						<div class="header__logo"><img src="img/logo.png" alt="icon: logo" width="93" height="13"></div>
+						<div class="header__logo"><img src="img/logo.png" loading="lazy" alt="icon: logo" width="93" height="13" /></div>
 						<div class="menu__icon icon-menu">
 							<span></span>
 							<span></span>
@@ -44,7 +47,7 @@
 				<div class="abuot__container">
 					<div class="about__container-wrapper">
 						<div class="about__img-ibg">
-							<img src="img/about.png" alt="photo: photograf" class="about__img" width="476" height="634">
+							<img src="img/about.png" loading="lazy" alt="photo: photograf" class="about__img" width="476" height="634" />
 						</div>
 						<div class="about__spetial">
 							<h1 class="about__spetial-title">Special Photography Studio Based in Berlin, Germany</h1>
@@ -55,7 +58,7 @@
 						</div>
 					</div>
 					<div class="about__img-model">
-						<img src="img/about1.png" alt="photo: model" class="about__img model" width="679" height="350">
+						<img src="img/about1.png" loading="lazy" alt="photo: model" class="about__img model" width="679" height="350" />
 					</div>
 				</div>
 			</div>
@@ -75,11 +78,54 @@
 						</div>
 					</div>
 					<div class="project__container-image">
-						<img class="image__project" src="img/Rectangle.png" alt="photo: photo model" width="828" height="501">
+						<img class="image__project" src="img/Rectangle.png" loading="lazy" alt="photo: photo model" width="828" height="501" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="view app" id="app">
+			<div class="container">
+				<div class="container__view view-container">
+					<div class="project__container-context view-context">
+						<span class="project__container-number view-left">02</span>
+						<div class="project__container-content view-content">
+							<h2 class="project__container-subtitle view-left">Featured Project</h2>
+							<h1 class="project__container-title view-left">Project title</h1>
+							<p class="project__container-info view-left">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<a href="#" class="project__container-btn view-left">View Project <span>⟶</span></a>
+						</div>
+					</div>
+					<div class="view__btn">
+						<a href="#" id="play" class="play">Play</a><span>/</span><a href="#" id="mute">Mute</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="project second">
+			<div class="container">
+				<div class="project__container">
+					<div class="project__container-context">
+						<div class="project__container-content second-content">
+							<h2 class="project__container-subtitle second-subtitle">Featured Project</h2>
+							<h1 class="project__container-title second-title">Project title</h1>
+							<p class="project__container-info second-info">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<a href="#" class="project__container-btn second-btn">View Project <span>⟶</span></a>
+						</div>
+					</div>
+					<div class="project__container-image">
+						<span class="project__container-number second-number">03</span>
+						<img class="image__project second-image" src="img/image(copy).png" loading="lazy" alt="photo: photo model" width="828" height="501" />
 					</div>
 				</div>
 			</div>
 		</section>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/jquery.vide.min.js"></script>
+	<script src="js/video.js"></script>
 </body>
-</html>
+</html><!--https://youtu.be/9uPWX6cYR6I-->
