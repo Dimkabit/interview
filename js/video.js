@@ -3,7 +3,7 @@ $(document).ready(function () {
 		mp4: 'video/SAINT JAMES - Collection Printemps_Été 2019.mp4',
 		webm: 'video/SAINT JAMES - Collection Printemps_Été 2019 (convert-video-online.com).webm',
 		ogv: 'video/SAINT JAMES - Collection Printemps_Été 2019.ogv',
-		poster: '../img/image2.png',
+		poster: 'img/image2.png',
 		 
    }, {
 		autoplay: false,
@@ -22,7 +22,7 @@ playBtn.addEventListener('click', (e) => {
 				mp4: 'video/SAINT JAMES - Collection Printemps_Été 2019.mp4',
 				webm: 'video/video.webm',
 				ogv: 'video/video.ogv',
-				poster: '../img/image2.png',
+				poster: 'img/image2.png',
 				 
 			}, {
 				autoplay: true,
@@ -35,7 +35,7 @@ playBtn.addEventListener('click', (e) => {
 				mp4: 'video/SAINT JAMES - Collection Printemps_Été 2019.mp4',
 				webm: 'video/video.webm',
 				ogv: 'video/video.ogv',
-				poster: '../img/image2.png',
+				poster: 'img/image2.png',
 				 
 			}, {
 				autoplay: false,
@@ -52,7 +52,7 @@ muteBtn.addEventListener('click', (e) => {
 				mp4: 'video/SAINT JAMES - Collection Printemps_Été 2019.mp4',
 				webm: 'video/video.webm',
 				ogv: 'video/video.ogv',
-				poster: '../img/image2.png',
+				poster: 'img/image2.png',
 				 
 			}, {
 				muted: true,
