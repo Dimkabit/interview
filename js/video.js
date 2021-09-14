@@ -1,3 +1,8 @@
+
+const playBtn = document.querySelector('.play');
+const muteBtn = document.getElementById('mute');
+
+
 $(document).ready(function () {
 	$('#app').vide({
 		mp4: 'video/SAINT JAMES - Collection Printemps_Été 2019.mp4',
@@ -11,42 +16,56 @@ $(document).ready(function () {
 });
 
 
-const playBtn = document.getElementById('play');
-const muteBtn = document.getElementById('mute')
+function send1(){
+	playBtn.textContent = 'Stop';
+	$(document).ready(function () {
+		$('#app').vide({
+			mp4: 'video/SAINT JAMES - Collection Printemps_Été 2019.mp4',
+			webm: 'video/video.webm',
+			ogv: 'video/video.ogv',
+			poster: 'img/image2.png',
+			 
+		}, {
+			autoplay: true,
+			muted: false,
+		});
+	});
+ }
+  
+ function send2(){
+	playBtn.textContent = 'Play';
+	$(document).ready(function () {
+		$('#app').vide({
+			mp4: 'video/SAINT JAMES - Collection Printemps_Été 2019.mp4',
+			webm: 'video/video.webm',
+			ogv: 'video/video.ogv',
+			poster: 'img/image2.png',
+			 
+		}, {
+			autoplay: false,
+			muted: false,
+		});
+	});
+ }
+
+
 playBtn.addEventListener('click', (e) => {
 	e.preventDefault();
+	playBtn.classList.toggle('active');
 	
-	if(playBtn) {
-		$(document).ready(function () {
-			$('#app').vide({
-				mp4: 'video/SAINT JAMES - Collection Printemps_Été 2019.mp4',
-				webm: 'video/video.webm',
-				ogv: 'video/video.ogv',
-				poster: 'img/image2.png',
-				 
-			}, {
-				autoplay: true,
-				muted: false,
-			});
-		});
+	if(playBtn.classList.contains('active')) {
+		send1();
 	} else {
-		$(document).ready(function () {
-			$('#app').vide({
-				mp4: 'video/SAINT JAMES - Collection Printemps_Été 2019.mp4',
-				webm: 'video/video.webm',
-				ogv: 'video/video.ogv',
-				poster: 'img/image2.png',
-				 
-			}, {
-				autoplay: false,
-			});
-		});
+		send2();
 	}
-});
+})
 
-muteBtn.addEventListener('click', (e) => {
+
+muteBtn.onclick = (e) => {
 	e.preventDefault();
-	if(muteBtn) {
+	muteBtn.classList.toggle('active');
+
+	if(muteBtn.classList.contains('active')) {
 		$(document).ready(function () {
 			$('#app').vide({
 				mp4: 'video/SAINT JAMES - Collection Printemps_Été 2019.mp4',
@@ -58,7 +77,9 @@ muteBtn.addEventListener('click', (e) => {
 				muted: true,
 			});
 		});
+	} else {
+		send2()
 	}
-})
+};
 
 

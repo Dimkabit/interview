@@ -586,12 +586,17 @@ body.lock {
       -ms-flex-pack: center;
           justify-content: center;
   /* Take full size */
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
 .container__view.view-container {
-  margin-top: 40%;
+  margin-top: 0%;
+}
+
+.project__container-title.view-left {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .view-context {
@@ -610,8 +615,6 @@ body.lock {
 
 .view__btn {
   margin-left: 90%;
-  margin-top: 10%;
-  margin-bottom: 25%;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -627,6 +630,7 @@ body.lock {
 @media (max-width: 968px) {
   .view__btn {
     margin-left: 80%;
+    padding-bottom: 5%;
   }
 }
 
@@ -639,6 +643,10 @@ body.lock {
 .project.second {
   background: #FFFFFF;
   margin-top: 7%;
+}
+
+.project__container-title.second-title {
+  margin-top: 349px;
 }
 
 .second-subtitle, .second-title, .second-info, .second-number, .second-btn {
@@ -654,5 +662,17 @@ body.lock {
 }
 
 .image__project.second-image {
-  margin: 30px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
+}
+
+@media (max-width: 992px) {
+  .project__container-context.second-context {
+    margin: 0px auto;
+  }
+  .project__container-title.second-title {
+    margin-top: 20px;
+  }
+  .project__container-image.second-img {
+    margin: 50px 0px 0px 0px;
+  }
 }
