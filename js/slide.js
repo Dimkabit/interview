@@ -9,7 +9,7 @@ const data = [
 		img: 'img/slide2.png',
 	},
 	{
-		img: 'img/slide3.png',
+		img: 'img/slide3.jpg',
 	},
 ];
 
