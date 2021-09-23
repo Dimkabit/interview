@@ -11,13 +11,17 @@
 		<link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
 		<link rel="icon" type="image/x-icon" href="/favicon.ico">
 		<link rel="icon" href="/favicon.ico" /> 
+		<link rel="apple-touch-icon" href="/example.png">
+		<meta name="theme-color" content="#317EFB"/>
 		<script src="js/script.js" defer></script>
 		<script src="js/slide.js" defer></script>
+		<script src="js/blockScrolled.js" defer></script>
+		<script src="js/smoothScroll.js" defer></script>
 	<title>interview</title>
 </head>
 <body>
-	<div class="wrapper">
-		<header class="header">
+	<div class="wrapper" id="header">
+		<header class="header" >
 			<div class="container">
 				<div class="header__row">
 					<div class="header__menu menu">
@@ -29,10 +33,10 @@
 						</div>
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li><a href="#" class="menu__link">about us</a></li>
-								<li><a href="#" class="menu__link">Project</a></li>
-								<li><a href="#" class="menu__link">Challenge</a></li>
-								<li><a href="#" class="menu__link">Find us</a></li>
+								<li><a href="#about" class="menu__link">about us</a></li>
+								<li><a href="#project" class="menu__link">Project</a></li>
+								<li><a href="#challenge" class="menu__link">Challenge</a></li>
+								<li><a href="#find_us" class="menu__link">Find us</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -43,7 +47,7 @@
 			<div class="main__screen-body">
 			</div>
 		</main>
-		<section class="about">
+		<section class="about" id="about">
 			<div class="container">
 				<div class="abuot__container">
 					<div class="about__container-wrapper">
@@ -62,16 +66,17 @@
 						<img src="img/about1.png" loading="lazy" alt="photo: model" class="about__img model" width="679" height="350" />
 					</div>
 				</div>
+				<a href="#header" class="up" id="up"><img class="up-image" src="img/pngwing.com.png" alt=""></a>
 			</div>
 		</section>
-		<section class="project">
+		<section class="project" id="project">
 			<div class="container">
 				<div class="project__container">
 					<div class="project__container-context">
 						<span class="project__container-number">03</span>
 						<div class="project__container-content">
 							<h2 class="project__container-subtitle">Featured Project</h2>
-							<h1 class="project__container-title">Project title</h1>
+							<h2 class="project__container-title">Project title</h2>
 							<p class="project__container-info">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
@@ -79,7 +84,7 @@
 						</div>
 					</div>
 					<div class="project__container-image">
-						<img class="image__project" src="img/Rectangle.png" loading="lazy" alt="photo: photo model" width="828" height="501" />
+						<img class="image__project" loading="lazy" src="img/Rectangle.png" loading="lazy" alt="photo: photo model" width="828" height="501" />
 					</div>
 				</div>
 			</div>
@@ -91,7 +96,7 @@
 						<span class="project__container-number view-left">02</span>
 						<div class="project__container-content view-content">
 							<h2 class="project__container-subtitle view-left">Featured Project</h2>
-							<h1 class="project__container-title view-left">Project title</h1>
+							<h2 class="project__container-title view-left">Project title</h2>
 							<p class="project__container-info view-left">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
@@ -110,7 +115,7 @@
 					<div class="project__container-context second-context">
 						<div class="project__container-content second-content">
 							<h2 class="project__container-subtitle second-subtitle">Featured Project</h2>
-							<h1 class="project__container-title second-title">Project title</h1>
+							<h2 class="project__container-title second-title">Project title</h2>
 							<p class="project__container-info second-info">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
@@ -124,7 +129,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="oridnary">
+		<section class="oridnary" >
 			<div class="container">
 				<div class="container__oridnary">
 					<div class="container__oridnary-chelenge">
@@ -132,8 +137,8 @@
 							<span class="chelenge-number">04</span>
 							<h3 class="chelenge__progect">Featured Project</h3>
 						</div>
-						<img src="img/challenge.png" width="476" height="601" alt="photo: photo challenge" class="chelenge__image">
-						<div class="chelenge__context">
+						<img src="img/challenge.png" loading="lazy" width="476" height="601" alt="photo: photo challenge" class="chelenge__image">
+						<div class="chelenge__context" id="challenge">
 							<h2 class="chelenge__title">Oridnary Challenge</h2>
 						<p class="chelenge__text">Oridnary is a Gothenburg-based creative development studio. Through technology and design they differentiate artists, creatives and brands to help them break through the noise. Oridnary likes to challenge the ordinary.</p>
 						<a href="#" class="project__container-btn cheleng-btn">View Project <span>⟶</span></a>
@@ -141,7 +146,7 @@
 					</div>
 					<div class="container__chelenge-slide">
 						<div class="chelenge__slide">
-							<img src="img/slide.png" alt="photo: new model" width="686" height="1038" class="chelenge__slide-image">
+							<img src="img/slide.png" loading="lazy" alt="photo: new model" width="686" height="1038" class="chelenge__slide-image">
 								<div class="chelenge__slide-button">
 									<span class="button__slide button active"></span>
 									<span class="button__slide button"></span>
@@ -152,7 +157,7 @@
 				</div>
 			</div>
 		</section>
-		<footer class="footer">
+		<footer class="footer" id="find_us">
 			<div class="container">
 				<div class="footer__container">
 					<div class="footer__copyrite">© 2021 - ITERVIEW / All Rights Reserved</div>

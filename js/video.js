@@ -9,6 +9,7 @@ $(document).ready(function () {
 		webm: 'video/SAINT JAMES - Collection Printemps_Été 2019 (convert-video-online.com).webm',
 		ogv: 'video/SAINT JAMES - Collection Printemps_Été 2019.ogv',
 		poster: 'img/image2.png',
+		
 		 
    }, {
 		autoplay: false,
